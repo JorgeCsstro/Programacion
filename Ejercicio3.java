@@ -2,13 +2,17 @@ public class Ejercicio3 {
 
 	public static void main (String[] args) {
 
-        final double pi = 3.141592;
-        double diam = 17.6;
-        double altura = 44.4;
+        int a = 1;
+        int b = -6;
+        int c = 4;
 
-            System.out.println("Área = "+((2 * pi * (diam/2)) * altura));
+            double x1 = -b + Math.sqrt(b^2 - 4 * a * c) / 2 * a;
 
-            System.out.println("Volumen = "+((pi * (diam/2)) * (pi * (diam/2))));
+                System.out.println(x1);
+
+            double x2 = -b - Math.sqrt(b^2 - 4 * a * c) / 2 * a;
+
+                System.out.print(x2);
 
 	}
 }

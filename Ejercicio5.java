@@ -1,20 +1,32 @@
+import java.util.Scanner;
+
 public class Ejercicio5 {
 
 	public static void main (String[] args) {
 
-        String nombre = "Jorge Castro Tramoyeres";
+       Scanner sc = new Scanner(System.in);
 
-            int index1 = nombre.indexOf(" ");// coje el index del espacio
-            int index2 = nombre.indexOf(" ", index1 +1);// coje el index del 2o espacio
+       System.out.println("¿Cuantos huevos caben en la cazuela?");
 
-            String nomb = nombre.substring(0, index1);// coje a partir del index 0 (el inicio de la frase) hasta el 1er index, es decir, el primer espacio         
-            String ape1 = nombre.substring(index1+1, index2);// coje lo que esta entre el 1er espacio y el 2o espacio / se pone +1 para que NO COJA EL ESPACIO
-            String ape2 = nombre.substring(index2+1);// coje lo que esta a partir del 2o espacio
+            double tcazuela;
 
-            System.out.println(nomb);
-            System.out.println(ape1);            
-            System.out.println(ape2);
+            tcazuela = sc.nextInt();
 
+            sc.nextLine();
+
+       System.out.println("¿Cuantos huevos quieres cozer?");
+
+            double huevos;
+
+            huevos = sc.nextInt();
+
+            sc.nextLine();
+
+        double redondeo = Math.ceil(huevos / tcazuela);
+
+        double tiempo = redondeo * 10;
+
+        System.out.println("Tardarás "+ (int)tiempo + " minutos");
         
 
 	}
