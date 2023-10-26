@@ -4,26 +4,30 @@ public class Ejercicio2 {
 
 	public static void main (String[] args) {
 
+        /*VARIABLES: */
 
-        double peso;
-        double altura;
+        int fila = 3;
 
+        int columna = 3;
+
+        int[] ar = new int[fila-1][columna-1];
+
+        /*ATAJOS: */
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("¿Cuanto pesas (kg)?");
+        /*CODIGO: */
 
-            peso = sc.nextDouble();
+        System.out.print("Que FILA quieres?: ");
 
-            sc.nextLine();
-            
-        System.out.println("¿Cuanto mides (m)?");
+        fila = sc.nextInt();
 
-            altura = sc.nextDouble();
+        System.out.print("Que COLUMNA quieres?: ");
 
-        double imc = peso / (altura * altura);
 
-            System.out.println("Tu masa corporal es: " + imc + " imc");
+
+
+
 
         
 

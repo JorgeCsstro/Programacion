@@ -4,34 +4,38 @@ public class Ejercicio1 {
 
 	public static void main (String[] args) {
 
-        int num;
+        /*VARIABLES: */
 
-        System.out.println("¿Que número quieres multiplicar?");
+        int[] ar = new int[15];
 
-        Scanner introducido = new Scanner(System.in);
+        int i;
 
-        num = introducido.nextInt();
+        /*ATAJOS: */
 
-            System.out.println(num + " X 0 = " + num * 0);
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println(num + " X 1 = " + num * 1);
+        /*CODIGO: */
 
-            System.out.println(num + " X 2 = " + num * 2);
+        System.out.println("Introduce 15 números: ");
 
-            System.out.println(num + " X 3 = " + num * 3);
+        for (i = 0; i < ar.length-1; i++) {
 
-            System.out.println(num + " X 4 = " + num * 4);
+            System.out.print("Número " + (i+1) + ": ");
+            ar[i] = ar[i+1];
+            ar[i] = sc.nextInt();
 
-            System.out.println(num + " X 5 = " + num * 5);
+        }
 
-            System.out.println(num + " X 6 = " + num * 6);
+        for (i = 0; i < ar.length; i++){
 
-            System.out.println(num + " X 7 = " + num * 7);
+            System.out.println(ar[i]);
 
-            System.out.println(num + " X 8 = " + num * 8);
+        }
 
-            System.out.println(num + " X 9 = " + num * 9);
+ 
 
-            System.out.println(num + " X 10 = " + num * 10);
+
+        
+
 	}
 }
