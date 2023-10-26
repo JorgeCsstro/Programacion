@@ -1,47 +1,21 @@
-import java.util.Scanner;
-
 public class Ejercicio5 {
-    public static void main(String[] args) {
-        
-        /*VARIABLES: */
 
-        int num;
+	public static void main (String[] args) {
 
-        int i = 1;
+        String nombre = "Jorge Castro Tramoyeres";
 
-        int j = i;
+            int index1 = nombre.indexOf(" ");// coje el index del espacio
+            int index2 = nombre.indexOf(" ", index1 +1);// coje el index del 2o espacio
 
-        /*ATAJOS: */
+            String nomb = nombre.substring(0, index1);// coje a partir del index 0 (el inicio de la frase) hasta el 1er index, es decir, el primer espacio         
+            String ape1 = nombre.substring(index1+1, index2);// coje lo que esta entre el 1er espacio y el 2o espacio / se pone +1 para que NO COJA EL ESPACIO
+            String ape2 = nombre.substring(index2+1);// coje lo que esta a partir del 2o espacio
 
-        Scanner sc = new Scanner(System.in);
-
-        /*CODIGO: */
-
-        System.out.println("\n LOS PARES ENTEROS\n");
-        
-        System.out.print("Dime un número entero: ");
-
-        num = sc.nextInt();
+            System.out.println(nomb);
+            System.out.println(ape1);            
+            System.out.println(ape2);
 
         
-        if (num <= 0) {
 
-            System.out.println("DIME UN NÚMERO ENTERO");
-
-        } else {
-            
-            System.out.println("\n Los numeros pares del entro son: ");
-
-            for (i = 1; i <= num; i++) {
-
-                for (j = i; j <= num; j++) {
-
-                    int resu = i + j + i * j;
-
-                    System.out.println("(" + i + ", " + j + ") = " + resu);
-
-                }
-            }
-        }
-    }
+	}
 }
