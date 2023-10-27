@@ -4,38 +4,31 @@ public class Ejercicio1 {
 
 	public static void main (String[] args) {
 
-        /*VARIABLES: */
+        	/*VARIABLES: */
 
-        int[] ar = new int[15];
+        	int[] ar = new int[15];
 
-        int i;
+        	int i;
 
-        /*ATAJOS: */
+        	/*ATAJOS: */
 
-        Scanner sc = new Scanner(System.in);
+        	Scanner sc = new Scanner(System.in);
 
-        /*CODIGO: */
+        	/*CODIGO: */
 
-        System.out.println("Introduce 15 números: ");
-
-        for (i = 0; i < ar.length-1; i++) {
-
-            System.out.print("Número " + (i+1) + ": ");
-            ar[i] = ar[i+1];
-            ar[i] = sc.nextInt();
-
-        }
-
-        for (i = 0; i < ar.length; i++){
-
-            System.out.println(ar[i]);
-
-        }
-
- 
-
-
-        
-
+	        System.out.println("Introduce 15 números: ");
+	
+	        for (i = 0; i < ar.length-1; i++) {
+	
+	            System.out.print("Número " + (i+1) + ": ");
+	            ar[i] = sc.nextInt();
+	            
+	        }
+	
+	        for (i = 0; i < ar.length-1;i++){
+	
+	            System.out.println(ar[i]);
+	
+	        }
 	}
 }
